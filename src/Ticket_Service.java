@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Ticket_Service {
     Ticket ticket = new Ticket();
-
     double totalPrice = 0;
     Scanner scan = new Scanner(System.in);
     double price = 1;
@@ -30,7 +29,6 @@ public class Ticket_Service {
                 start();
                 break;
         }
-
     }
 
 
@@ -59,8 +57,8 @@ public class Ticket_Service {
             System.err.println("Bu nedir yaaa? :)  Sayı girmeyi dener misin canım ;)");
             scan.next();
             start();
+            return;
         }
-
     }
 
     public void printTicket() {
